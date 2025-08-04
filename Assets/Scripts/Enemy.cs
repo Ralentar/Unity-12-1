@@ -11,8 +11,8 @@ public class Enemy : MonoBehaviour
         transform.Translate(_direction * _speed * Time.deltaTime);
     }
 
-    public void Initialize(Vector3 targetPosition)
+    public void SetDirection(Vector3 direction)
     {
-        _direction = (targetPosition - transform.position).normalized;
+        _direction = direction;
     }
 }
